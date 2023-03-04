@@ -1,6 +1,12 @@
 function SumArray(arr, n) {
   // Your code here:
 
+  for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] + arr[j] === n) return true;
+    }
+  }
+  return false;
 }
 
 console.log(SumArray([2, 4, 5, 9], 9)); //(true)
