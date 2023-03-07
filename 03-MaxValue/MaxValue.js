@@ -1,5 +1,4 @@
 function MaxValue(shares) {
-  // Your code here:
   let max = shares[1] - shares[0];
   for (let i = 0; i < shares.length - 1; i++) {
     for (let j = i + 1; j < shares.length; j++) {
